@@ -1,0 +1,13 @@
+[project]
+name = "get-goalside-papers"
+version = "0"
+description = "Blog-papers on football providers' open data, each reproducible with a stated goalside version."
+requires-python = ">=3.12"
+dependencies = ["goalside"]
+
+[tool.uv]
+package = false
+
+# goalside comes from a clone of get-goalside-code in the folder beside this one.
+[tool.uv.sources]
+goalside = { path = "../get-goalside-code", editable = true }
